@@ -1,0 +1,27 @@
+Descripción general
+
+El sistema tiene como objetivo permitir la gestión de una tienda de compra 
+y venta de zapatillas, donde los usuarios podrán visualizar productos,
+agregarlos a un carrito, gestionar favoritos y consultar información de stock
+y categorías.
+
+
+Requerimientos
+Usuarios
+El sistema debe permitir registrar nuevos usuarios.
+El sistema debe permitir visualizar la lista de usuarios registrados.
+Productos
+El sistema debe permitir agregar nuevas zapatillas.
+El sistema debe permitir listar todas las zapatillas disponibles.
+El sistema debe permitir asociar cada producto a una categoría.
+Carrito
+El sistema debe permitir agregar productos al carrito.
+El sistema debe permitir visualizar los productos dentro del carrito.
+Stock
+El sistema debe permitir visualizar el stock disponible de cada producto
+Categorías
+El sistema debe permitir crear categorías (ej: Nike, Adidas, Jordan).
+El sistema debe permitir listar las categorías existentes.
+Favoritos
+El sistema debe permitir guardar productos como favoritos.
+El sistema debe permitir visualizar la lista de productos favoritos de un usuario
