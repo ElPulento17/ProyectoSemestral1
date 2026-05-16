@@ -1,0 +1,92 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ApiGatewayApplication",
+            "request": "launch",
+            "mainClass": "com.zapas.api_gateway.ApiGatewayApplication",
+            "projectName": "api-gateway",
+            "vmArgs": " -Dcom.sun.management.jmxremote"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServicePacientesApplication<service-pacientes>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.hospital.service_pacientes.ServicePacientesApplication",
+            "projectName": "service-pacientes",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceGestionApplication<service-gestion>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.service_gestion.ServiceGestionApplication",
+            "projectName": "service-gestion",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ApiGatewayApplication<api-gateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.api_gateway.ApiGatewayApplication",
+            "projectName": "api-gateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceZapatillasApplication<service-zapatillas>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.zapas.service_zapatillas.ServiceZapatillasApplication",
+            "projectName": "service-zapatillas",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServicePedidosApplication<service-pedidos>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.zapas.service_pedidos.ServicePedidosApplication",
+            "projectName": "service-pedidos",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceUsuariosApplication<service-usuarios>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.zapas.service_usuarios.ServiceUsuariosApplication",
+            "projectName": "service-usuarios",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServicePagosApplication<service-pagos>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.zapas.service_pagos.ServicePagosApplication",
+            "projectName": "service-pagos",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceEnviosApplication<service-envios>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.zapas.service_envios.ServiceEnviosApplication",
+            "projectName": "service-envios",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
