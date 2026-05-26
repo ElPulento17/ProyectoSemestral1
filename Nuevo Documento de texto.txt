@@ -1,0 +1,85 @@
+1. Crear un Rol de Usuario
+Método: POST
+URL: http://localhost:8081/api/v1/usuario/tipos
+
+JSON
+{
+    "nombre": "COMPRADOR"
+}
+
+2. Crear el Usuario (El Cliente)
+Método: POST
+URL: http://localhost:8081/api/v1/Usuario 
+
+JSON
+{
+    "run": "1111111-1",
+    "nombre": "Juan Perez",
+    "correo": "juan@zapas.com",
+    "password": "123",
+    "rol": { "id": 1 }
+}
+
+3. Crear una Marca de Zapatilla
+Método: POST
+URL: http://localhost:8082/api/v1/marcas
+
+JSON
+{
+    "nombre": "Nike"
+}
+
+4. Crear la Zapatilla (El Producto)
+Método: POST
+URL: http://localhost:8082/api/v1/zapatillas 
+
+JSON
+{
+    "modelo": "Air Force 1",
+    "precio": 120000,
+    "stock": 10,
+    "estado": "NUEVA",
+    "marca": { "id": 1 }
+}
+
+Simular la Compra (El Carrito)
+(El cliente Juan Perez agrega la Air Force 1 a su carrito y genera la orden)
+5. Crear el Pedido
+Método: POST
+URL: http://localhost:8083/api/v1/pedidos 
+
+JSON
+{
+    "fecha": "2024-05-20",
+    "total": 120000,
+    "estadoPedido": "PENDIENTE",
+    "usuarioId": 1,
+    "detalles": [
+        {
+            "cantidad": 1,
+            "subtotal": 120000,
+            "zapatillaId": 1
+        }
+    ]
+}
+
+Fase 3: La Pasarela de Pago y la "Magia" Final
+(El cliente procede a pagar su orden de compra)
+
+6. Generar el Pago
+
+Método: POST
+
+
+URL: http://localhost:8084/api/v1/pagos 
+
+Body (JSON):
+
+JSON
+{
+    "monto": 120000,
+    "fechaPago": "2024-05-20",
+    "metodo": "WEBPAY",
+    "pedidoId": 1
+}
+
