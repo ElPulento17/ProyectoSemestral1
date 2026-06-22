@@ -1,0 +1,159 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ApiGatewayApplication",
+            "request": "launch",
+            "mainClass": "com.zapas.api_gateway.ApiGatewayApplication",
+            "projectName": "api-gateway",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=57091 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=api-gateway"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServicePacientesApplication<service-pacientes>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.hospital.service_pacientes.ServicePacientesApplication",
+            "projectName": "service-pacientes",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceGestionApplication<service-gestion>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.service_gestion.ServiceGestionApplication",
+            "projectName": "service-gestion",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ApiGatewayApplication<api-gateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.api_gateway.ApiGatewayApplication",
+            "projectName": "api-gateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceZapatillasApplication<service-zapatillas>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.zapas.service_zapatillas.ServiceZapatillasApplication",
+            "projectName": "service-zapatillas",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=57096 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=service-zapatillas"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServicePedidosApplication<service-pedidos>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.zapas.service_pedidos.ServicePedidosApplication",
+            "projectName": "service-pedidos",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=57094 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=service-pedidos"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceUsuariosApplication<service-usuarios>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.zapas.service_usuarios.ServiceUsuariosApplication",
+            "projectName": "service-usuarios",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=57095 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=service-usuarios"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServicePagosApplication<service-pagos>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.zapas.service_pagos.ServicePagosApplication",
+            "projectName": "service-pagos",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=57093 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=service-pagos"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceEnviosApplication<service-envios>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.zapas.service_envios.ServiceEnviosApplication",
+            "projectName": "service-envios",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=57092 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=service-envios"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceNotificacionesApplication<service-notificaciones>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.zapas.service_notificaciones.ServiceNotificacionesApplication",
+            "projectName": "service-notificaciones",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceDescuentosApplication<service-descuentos>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.zapas.service_descuentos.ServiceDescuentosApplication",
+            "projectName": "service-descuentos",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceResenasApplication<service-resenas>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.zapas.service_resenas.ServiceResenasApplication",
+            "projectName": "service-resenas",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceProveedoresApplication<service-proveedores>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.zapas.service_proveedores.ServiceProveedoresApplication",
+            "projectName": "service-proveedores",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceReportesApplication<service-reportes>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.zapas.service_reportes.ServiceReportesApplication",
+            "projectName": "service-reportes",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceAuthApplication<service-auth>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.zapas.service_auth.ServiceAuthApplication",
+            "projectName": "service-auth",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
